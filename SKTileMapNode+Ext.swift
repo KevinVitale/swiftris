@@ -1,19 +1,19 @@
 import SpriteKit
 import GameKit
 
+///
+fileprivate let Tile = SKTexture(imageNamed: "block")
+fileprivate let TileDefinition = SKTileDefinition(texture: Tile)
+fileprivate let TileGroup = SKTileGroup(tileDefinition: TileDefinition)
+fileprivate let TileSet = SKTileSet(tileGroups: [TileGroup, .empty()])
+
 /**
  */
 extension SKTileMapNode {
-    ///
-    private static let tile = SKTexture(imageNamed: "block")
-    private static let tileDefinition = SKTileDefinition(texture: tile)
-    private static let tileGroup = SKTileGroup(tileDefinition: tileDefinition)
-    private static let tileSet = SKTileSet(tileGroups: [tileGroup, .empty()])
-
     /**
      */
     convenience init(_ dimensions: (rows: Int, columns: Int)) {
-        self.init(tileSet: SKTileMapNode.tileSet, columns: dimensions.columns, rows: dimensions.rows, tileSize: SKTileMapNode.tile.size())
+        self.init(tileSet: TileSet, columns: dimensions.columns, rows: dimensions.rows, tileSize: Tile.size())
         self.anchorPoint = .zero
     }
 }
