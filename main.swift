@@ -38,34 +38,6 @@ private func bootstrapApp(window: NSWindow, delegate: NSApplicationDelegate? = n
     exit(0)
 }
 
-/**
- Creates the application's primary window.
- 
- - parameter title: The title of the window.
- - parameter frame: The window's frame.
- 
- - returns: A instance of `NSWindow`.
- */
-private func createWindow(_ viewController: NSViewController, title: String = "swiftris", frame rect: NSRect = NSRect(x: 0, y: 0, width: 480, height: 640)) -> NSWindow {
-    ///
-    let styleMask: NSWindowStyleMask = [
-        .titled,
-        .closable,
-        .borderless
-    ]
-
-    ///
-    let window   = NSWindow(contentRect: rect, styleMask: styleMask, backing: .buffered, defer: false)
-    window.title = title
-
-    ///
-    window.contentView = viewController.view
-    viewController.view.setFrameSize(rect.size)
-
-    ///
-    return window
-}
-
 ///
 let gameBoardDimensions = (rows: 20, columns: 10)
 let previewBoardDimensions = (rows: 4, columns: 4)
@@ -77,7 +49,6 @@ private let previewMap = SKTileMapNode(previewBoardDimensions)
 
 ///
 private let viewController = SKViewController<GameScene>()
-private let window = createWindow(viewController)
 
 ///
 let game = Game(gameBoardDimensions, gameScene: viewController.scene)
@@ -87,6 +58,10 @@ viewController.scene.game = game
 viewController.scene.gameBoardNode = gameBoardMap
 viewController.scene.currentPieceNode = gamePieceMap
 viewController.scene.previewPieceNode = previewMap
+viewController.view.frame = NSRect(x: 0, y: 0, width: 480, height: 640)
+
+///
+private let window = NSWindow(contentViewController: viewController)
 
 ///
 game.player.inputHandler.keyDown = { scene, event in
