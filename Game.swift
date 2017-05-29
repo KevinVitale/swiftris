@@ -270,8 +270,8 @@ final class Game {
         let defaultFallMultiplier: TimeInterval = 125.0
 
         ///
-        let levelAccum  = TimeInterval(score.level).multiplied(by: defaultFallMultiplier)
-        let fallingTime = defaultFallSpeed.subtracting(levelAccum).divided(by: 1000.0)
+        let levelAccum  = TimeInterval(score.level) * defaultFallMultiplier
+        let fallingTime = (defaultFallSpeed - levelAccum) / 1000.0
 
         ///
         return fallingTime
@@ -331,7 +331,7 @@ final class Game {
         if self.previousTime.isInfinite {
             self.previousTime = currentTime
         }
-        self.stateMachine.update(deltaTime: currentTime.subtracting(previousTime))
+        self.stateMachine.update(deltaTime: currentTime - previousTime)
         self.previousTime = currentTime
     }
 }

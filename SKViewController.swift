@@ -3,6 +3,7 @@ import SpriteKit
 
 /**
  */
+@NSKeyedArchiverEncodeNonGenericSubclassesOnly
 class SKViewController<Scene: SKScene>: NSViewController {
     /// The scene.
     /// - note: Assume a one-to-one pairing of view controller and scene type.

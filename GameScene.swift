@@ -88,7 +88,7 @@ final class GameScene: SKScene {
                 label.fontSize = 64.0
                 label.position = CGPoint(
                     x: frame.midX
-                    , y: frame.midY.adding(64.0)
+                    , y: frame.midY + 64.0
                 )
                 
                 ///

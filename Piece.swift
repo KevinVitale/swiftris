@@ -110,7 +110,7 @@ enum Piece {
     ]
     
     ///
-    private static let randomDistribution = GKRandomDistribution(lowestValue: 1, highestValue: Piece.pieceTypes.count)
+    static let randomDistribution = GKRandomDistribution(lowestValue: 1, highestValue: Piece.pieceTypes.count)
 
     /**
      */

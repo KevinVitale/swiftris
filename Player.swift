@@ -66,10 +66,10 @@ class Player {
             ///
             switch(type: piece, rows: tiles.count) {
             case (.long(let position), 1):
-                let transform = CGAffineTransform(translationX: tileSize.width.negated(), y: tileSize.height.multiplied(by: 2))
+                let transform = CGAffineTransform(translationX: -(tileSize.width), y: tileSize.height * 2)
                 piece = piece.position(at: position.applying(transform))
             case (.long(let position), _):
-                let transform = CGAffineTransform(translationX: tileSize.width, y: tileSize.height.multiplied(by: -2))
+                let transform = CGAffineTransform(translationX: tileSize.width, y: tileSize.height * -2)
                 piece = piece.position(at: position.applying(transform))
             default: ()
             }
