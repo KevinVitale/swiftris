@@ -3,12 +3,13 @@ import SpriteKit
 import GameKit
 
 /**
- Bootstraps the `NSApp` and starts its run loop, optionally setting a delegate.
-
- - parameter delegate: An optional application delegate.
- - returns: Never.
+ Bootstraps the `NSApp`, assigning its delegate and making `window` key.
+ 
+ - parameter window: The window being made key.
+ - parameter delegate: The application's delegate. May be `nil`.
+ - returns: The application.
  */
-private func bootstrapApp(window: NSWindow, delegate: NSApplicationDelegate? = nil) -> Never {
+private func app(displaying window: NSWindow, delegate: NSApplicationDelegate? = nil) -> NSApplication! {
     // initialize `NSApp`
     NSApplication.shared()
 
@@ -22,9 +23,8 @@ private func bootstrapApp(window: NSWindow, delegate: NSApplicationDelegate? = n
     // present `window` 
     window.makeKeyAndOrderFront(nil)
 
-    // enter run-loop
-    NSApp.run()
-    exit(0)
+    // return
+    return NSApp
 }
 
 ///
@@ -105,4 +105,4 @@ game.player.inputHandler.keyDown = { scene, event in
 let appDelegate = AppDelegate()
 
 ///
-bootstrapApp(window: window, delegate: appDelegate)
+app(displaying: window, delegate: appDelegate).run()
