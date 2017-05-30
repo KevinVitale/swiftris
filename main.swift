@@ -2,17 +2,6 @@ import AppKit
 import SpriteKit
 import GameKit
 
-///-----------------------------------------------------------------------------
-///-----------------------------------------------------------------------------
-/// ⚠️ *WARNING* ⚠️
-///-----------------------------------------------------------------------------
-///-----------------------------------------------------------------------------
-/// Confused why this file exists?
-/// Refer to `NSApplicationMain` in this document:
-/// https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Attributes.html
-///-----------------------------------------------------------------------------
-///-----------------------------------------------------------------------------
-
 /**
  Bootstraps the `NSApp` and starts its run loop, optionally setting a delegate.
 
