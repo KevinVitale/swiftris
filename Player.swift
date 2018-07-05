@@ -125,7 +125,7 @@ class Player {
 
 /**
  */
-extension Collection where Iterator.Element == [Int], IndexDistance == Int {
+extension Collection where Iterator.Element == [Int] {
     ///
     private var columns: Int {
         var total = 0

@@ -21,10 +21,6 @@ extension NSWindow
     }
 }
 
-// Create 'delegate'
-//------------------------------------------------------------------------------
-let appDelegate = AppDelegate(with: .shared)
-
 // Create 'window'
 //------------------------------------------------------------------------------
 let window = NSWindow {
@@ -42,6 +38,10 @@ let window = NSWindow {
     return viewController
 }
 window.styleMask.remove(.resizable)
+
+// Create 'delegate'
+//------------------------------------------------------------------------------
+let appDelegate = AppDelegate(with: .shared)
 
 // activate `NSApp`
 //------------------------------------------------------------------------------

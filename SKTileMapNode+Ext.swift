@@ -101,7 +101,7 @@ extension SKTileMapNode {
 
                 /// - parameter tileSprite: The sprite located at `tileCenter`.
                 var tileSprite: SKSpriteNode! = self.nodes(at: tileCenter)
-                    .flatMap { $0 as? SKSpriteNode }
+                    .compactMap { $0 as? SKSpriteNode }
                     .first
 
                 /// - note: Check for existing sprite
