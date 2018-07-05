@@ -2,7 +2,7 @@ import SpriteKit
 import GameKit
 
 ///
-fileprivate let Tile = SKTexture(imageNamed: "block")
+fileprivate let Tile = SKTexture(imageNamed: "Block")
 fileprivate let TileDefinition = SKTileDefinition(texture: Tile)
 fileprivate let TileGroup = SKTileGroup(tileDefinition: TileDefinition)
 fileprivate let TileSet = SKTileSet(tileGroups: [TileGroup, .empty()])

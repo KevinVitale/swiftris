@@ -12,7 +12,7 @@ class SKViewController<Scene: SKScene>: NSViewController {
      */
     override func loadView() {
         self.view = SKView()
-        self.view.autoresizingMask = [.viewWidthSizable, .viewHeightSizable]
+        self.view.autoresizingMask = [.width, .height]
     }
 
     /**
@@ -39,7 +39,7 @@ class SKViewController<Scene: SKScene>: NSViewController {
  */
 extension SKViewController {
     /// A coerced version of the receiver's view as type `SKView`.
-    var skView: SKView! {
+    var skView: SKView {
         return self.view as! SKView
     }
 }

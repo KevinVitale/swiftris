@@ -11,7 +11,7 @@ import GameKit
  */
 private func app(displaying window: NSWindow, delegate: NSApplicationDelegate? = nil) -> NSApplication! {
     // initialize `NSApp`
-    NSApplication.shared()
+    _ = NSApplication.shared
 
     // assign `delegate`
     NSApp.delegate = delegate

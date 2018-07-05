@@ -60,7 +60,7 @@ final class GameScene: SKScene {
                 newScene.isHidden = true
                 
                 ///
-                newScene.filter = CIFilter(name: "CIGaussianBlur", withInputParameters: [kCIInputRadiusKey:20.0])
+                newScene.filter = CIFilter(name: "CIGaussianBlur", parameters: [kCIInputRadiusKey:20.0])
                 newScene.backgroundColor = .clear
                 newScene.shouldEnableEffects = true
                 
