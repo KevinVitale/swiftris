@@ -165,7 +165,7 @@ final class GameScene: SKScene {
         /// - note: Extract the block texture from our `TileMap`
         guard let texture = gameBoardNode?.tileSet.tileGroups
             .filter({ $0 != .empty() })
-            .flatMap({ $0.rules.first?.tileDefinitions.first?.textures.first })
+            .compactMap({ $0.rules.first?.tileDefinitions.first?.textures.first })
             .first else {
                 fatalError("Missing block texture")
         }
@@ -203,38 +203,47 @@ final class GameScene: SKScene {
 
     /**
      */
-    override func mouseUp(with event: NSEvent) {
-        game?.player.inputHandler.inputUp?(self, event)
-    }
-
-    /**
-     */
-    override func mouseDown(with event: NSEvent) {
-        game?.player.inputHandler.inputDown?(self, event)
-    }
-
-    /**
-     */
-    override func mouseDragged(with event: NSEvent) {
-        game?.player.inputHandler.inputDragged?(self, event)
-    }
-
-    /**
-     */
-    override func mouseMoved(with event: NSEvent) {
-        game?.player.inputHandler.inputMoved?(self, event)
-    }
-
-    /**
-     */
-    override func keyUp(with event: NSEvent) {
-        game?.player.inputHandler.keyUp?(self, event)
-    }
-
-    /**
-     */
     override func keyDown(with event: NSEvent) {
-        game?.player.inputHandler.keyDown?(self, event)
+        switch (event.charactersIgnoringModifiers, event.modifierFlags.contains(.command)) {
+        case ("q", true):
+            NSApp.terminate(self)
+        default: ()
+        }
+        
+        /// Escape
+        guard event.keyCode != 53 else {
+            game?.start()
+            return
+        }
+        
+        /// Space
+        guard event.keyCode != 49 else {
+            repeat { }
+                while(game?.player.move(.down, scene: self) ?? false)
+            
+            game?.checkCollisions()
+            return
+        }
+        
+        interpretKeyEvents([event])
+    }
+    
+    override func moveUp(_ sender: Any?) {
+        game?.player.move(.rotate, scene: self)
+    }
+    
+    override func moveDown(_ sender: Any?) {
+        if !(game?.player.move(.down, scene: self) ?? false) {
+            game?.checkCollisions()
+        }
+    }
+    
+    override func moveLeft(_ sender: Any?) {
+        game?.player.move(.left, scene: self)
+    }
+    
+    override func moveRight(_ sender: Any?) {
+        game?.player.move(.right, scene: self)
     }
 }
 

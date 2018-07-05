@@ -9,9 +9,6 @@ class Player {
     ///
     private(set) var nextPiece: (piece: Piece?, tileColor: SKTileMapNode.TileColor) = (.random(at: .zero), .random())
 
-    ///
-    private(set) var inputHandler = InputHandler()
-
     /**
      */
     func generateNextPiece(in boardDimension: (rows: Int, columns: Int), pieceDimension: (rows: Int, columns: Int), tileSize: CGFloat = 32.0) {
@@ -156,30 +153,6 @@ extension Collection where Iterator.Element == [Int], IndexDistance == Int {
         ///
         return transposed
     }
-}
-/**
- */
-final class InputHandler {
-    typealias InputCallback = (SKScene, NSEvent) -> Void
-    typealias KeyboardCallback = InputCallback
-
-    ///
-    final var inputUp: InputCallback? = nil
-
-    ///
-    final var inputDown: InputCallback? = nil
-
-    ///
-    final var inputMoved: InputCallback? = nil
-
-    ///
-    final var inputDragged: InputCallback? = nil
-
-    ///
-    final var keyUp: KeyboardCallback? = nil
-
-    ///
-    final var keyDown: KeyboardCallback? = nil
 }
 
 /**
