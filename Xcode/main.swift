@@ -1,6 +1,5 @@
+import Foundation
 import AppKit
-import SpriteKit
-import GameKit
 
 // Create 'window'
 //------------------------------------------------------------------------------
