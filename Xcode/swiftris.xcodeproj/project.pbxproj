@@ -50,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0695B3215062BD008D4A35 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				0A95A1931E5B422D00E97974 /* SKViewController.swift */,
+				0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
 		0A1B5CD91E4D692D0010FE9C = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +68,6 @@
 				0AE8C1CF1E5D3235009F5761 /* Piece.swift */,
 				0AE8C1CD1E5D31F8009F5761 /* Player.swift */,
 				0A95A1971E5B770C00E97974 /* SKTileMapNode+Ext.swift */,
-				0A95A1931E5B422D00E97974 /* SKViewController.swift */,
 				0A95A1991E5B793F00E97974 /* GameScore.swift */,
 				0A1B5CE61E4D694F0010FE9C /* swiftris-mac */,
 				0A1B5D1D1E4DE5740010FE9C /* Resources */,
@@ -96,6 +104,7 @@
 			children = (
 				0A5A5DC1215037FB0025F138 /* Basic */,
 				0A5A5DBE215037220025F138 /* App */,
+				0A0695B3215062BD008D4A35 /* SpriteKit */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -114,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				0A0695B12150489F008D4A35 /* NumericGrid.swift */,
-				0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
