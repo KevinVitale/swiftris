@@ -2,28 +2,9 @@ import AppKit
 import SpriteKit
 import GameKit
 
-extension NSWindow
-{
-    /**
-     Creates a new window with the given `viewController`.
-     
-     - note:
-     This a convenience initializer which calls:
-        - `makeKeyAndOrderFront(nil)`; and
-        - `center()`
-     
-     - parameter viewController: The value assigned to `contentViewController`.
-     */
-    convenience init<ViewController: NSViewController>(_ viewController: () -> ViewController) {
-        self.init(contentViewController: viewController())
-        self.makeKeyAndOrderFront(nil)
-        self.center()
-    }
-}
-
 // Create 'window'
 //------------------------------------------------------------------------------
-let window = NSWindow {
+let window = Window {
     let viewController = SKViewController<GameScene>()
     viewController.view.frame = NSRect(x: 0, y: 0, width: 480, height: 640)
     
