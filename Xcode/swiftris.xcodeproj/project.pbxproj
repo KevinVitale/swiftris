@@ -59,7 +59,6 @@
 				0A95A1971E5B770C00E97974 /* SKTileMapNode+Ext.swift */,
 				0A95A1931E5B422D00E97974 /* SKViewController.swift */,
 				0A95A1991E5B793F00E97974 /* GameScore.swift */,
-				0A1B5CFF1E4D6EC50010FE9C /* AppDelegate.swift */,
 				0A1B5CE61E4D694F0010FE9C /* swiftris-mac */,
 				0A1B5D1D1E4DE5740010FE9C /* Resources */,
 				0A1B5CE51E4D694F0010FE9C /* Products */,
@@ -103,6 +102,7 @@
 		0A5A5DBE215037220025F138 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				0A1B5CFF1E4D6EC50010FE9C /* AppDelegate.swift */,
 				0A5A5DBF2150372E0025F138 /* Window.swift */,
 			);
 			path = App;
