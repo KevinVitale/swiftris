@@ -11,7 +11,7 @@
 		0A1B5CFC1E4D6B1B0010FE9C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B5CFB1E4D6B1B0010FE9C /* main.swift */; };
 		0A5A5DC02150372E0025F138 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A5DBF2150372E0025F138 /* Window.swift */; };
 		0A95A1951E5B42B000E97974 /* SKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95A1931E5B422D00E97974 /* SKViewController.swift */; };
-		0A95A1961E5B42EF00E97974 /* SKView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA860E81E4E554A00EA0E7C /* SKView+Ext.swift */; };
+		0A95A1961E5B42EF00E97974 /* SKViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */; };
 		0A95A1981E5B770C00E97974 /* SKTileMapNode+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95A1971E5B770C00E97974 /* SKTileMapNode+Ext.swift */; };
 		0A95A19A1E5B793F00E97974 /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95A1991E5B793F00E97974 /* GameScore.swift */; };
 		0A95A19B1E5CB70500E97974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B5CFF1E4D6EC50010FE9C /* AppDelegate.swift */; };
@@ -30,7 +30,7 @@
 		0A95A1931E5B422D00E97974 /* SKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewController.swift; sourceTree = "<group>"; };
 		0A95A1971E5B770C00E97974 /* SKTileMapNode+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKTileMapNode+Ext.swift"; sourceTree = "<group>"; };
 		0A95A1991E5B793F00E97974 /* GameScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
-		0AA860E81E4E554A00EA0E7C /* SKView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKView+Ext.swift"; sourceTree = "<group>"; };
+		0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewExtensions.swift; sourceTree = "<group>"; };
 		0AE8C1C91E5D3082009F5761 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0AE8C1CB1E5D3130009F5761 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		0AE8C1CD1E5D31F8009F5761 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -57,7 +57,6 @@
 				0AE8C1CF1E5D3235009F5761 /* Piece.swift */,
 				0AE8C1CD1E5D31F8009F5761 /* Player.swift */,
 				0A95A1971E5B770C00E97974 /* SKTileMapNode+Ext.swift */,
-				0AA860E81E4E554A00EA0E7C /* SKView+Ext.swift */,
 				0A95A1931E5B422D00E97974 /* SKViewController.swift */,
 				0A95A1991E5B793F00E97974 /* GameScore.swift */,
 				0A1B5CFF1E4D6EC50010FE9C /* AppDelegate.swift */,
@@ -94,6 +93,7 @@
 		0A5A5DBD2150371D0025F138 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0A5A5DC1215037FB0025F138 /* Basic */,
 				0A5A5DBE215037220025F138 /* App */,
 			);
 			name = Sources;
@@ -106,6 +106,14 @@
 				0A5A5DBF2150372E0025F138 /* Window.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		0A5A5DC1215037FB0025F138 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */,
+			);
+			path = Basic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +195,7 @@
 				0A1B5CFC1E4D6B1B0010FE9C /* main.swift in Sources */,
 				0A95A1981E5B770C00E97974 /* SKTileMapNode+Ext.swift in Sources */,
 				0AE8C1CE1E5D31F8009F5761 /* Player.swift in Sources */,
-				0A95A1961E5B42EF00E97974 /* SKView+Ext.swift in Sources */,
+				0A95A1961E5B42EF00E97974 /* SKViewExtensions.swift in Sources */,
 				0A5A5DC02150372E0025F138 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
