@@ -1,48 +1,27 @@
 import AppKit
 import SpriteKit
 
-/**
- */
-class SKViewController<Scene: SKScene>: NSViewController
-{
-    /// The scene.
-    /// - note: Assume a one-to-one pairing of view controller and scene type.
-    let scene = Scene()
-    
-    /**
-     */
-    override func loadView() {
-        self.view = SKView()
-        self.view.autoresizingMask = [.width, .height]
-    }
-
-    /**
-     */
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        #if debug
-            self.skView.toggle(debug: [.fps, .drawCount, .nodeCount])
-        #endif
-    }
-
-    /**
-     */
-    override func viewDidLayout() {
-        super.viewDidLayout()
-        self.scene.size = self.view.frame.size
-        
-        if self.skView.scene == nil {
-            self.skView.presentScene(self.scene)
-        }
-    }
-}
-
-/**
- */
-extension SKViewController
-{
-    /// A coerced version of the receiver's view as type `SKView`.
+class SKViewController: NSViewController {
+    /// The SpriteKit view managed by the controller.
     var skView: SKView {
         return self.view as! SKView
+    }
+    
+    /// The scene associated with the `SKView`.
+    var skScene: SKScene? {
+        return self.skView.scene
+    }
+    
+    ///
+    override func loadView() {
+        self.view = SKView()
+        self.view.frame = .zero
+        self.view.autoresizingMask = [.width, .height]
+    }
+    
+    ///
+    override func viewDidLayout() {
+        super.viewDidLayout()
+        self.skScene?.size = self.view.frame.size
     }
 }

@@ -1,7 +1,9 @@
 import SpriteKit
 
-/**
- */
+/// Creates, and manages, all game-related data and visuals.
+///
+/// See `sceneDidLoad()` to understand the initialization
+/// sequence which gets the `Game` set up.
 final class GameScene: SKScene {
     private var          scoreLabel: SKLabelNode = SKLabelNode()
     private var     scoreLabelValue: SKLabelNode = SKLabelNode()
@@ -154,6 +156,18 @@ final class GameScene: SKScene {
         addChild(levelLabelValue)
     }
 
+    override func sceneDidLoad() {
+        super.sceneDidLoad()
+        
+        let gameBoardDimensions = (rows: 20, columns: 10)
+        game = Game(gameBoardDimensions, gameScene: self)
+        gameBoardNode = SKTileMapNode(gameBoardDimensions)
+        
+        let previewBoardDimensions = (rows: 4, columns: 4)
+        previewPieceNode = SKTileMapNode(previewBoardDimensions)
+        currentPieceNode = SKTileMapNode(previewBoardDimensions)
+    }
+    
     /**
      */
     override func didMove(to view: SKView) {
