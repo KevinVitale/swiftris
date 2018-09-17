@@ -1,10 +1,7 @@
 import SpriteKit
 
-/**
- */
 extension SKView {
-    /**
-     */
+    /// Describes the debug flags available for `SKView`.
     public struct DebugFlag: OptionSet {
         public let rawValue: Int
         public init(rawValue: Int) {
@@ -19,8 +16,10 @@ extension SKView {
         static let nodeCount  = DebugFlag(rawValue: 1 << 5)
     }
 
-    /**
-     */
+    /// Toggle arbitruary debug flags.
+    ///
+    /// - Parameters:
+    ///     - flags: An option set containing debug flags.
     public func toggle(debug flags: DebugFlag) {
         showsFPS       = flags.contains(.fps)
         showsFields    = flags.contains(.fields)
