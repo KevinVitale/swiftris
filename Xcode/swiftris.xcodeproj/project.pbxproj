@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0695B22150489F008D4A35 /* NumericGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0695B12150489F008D4A35 /* NumericGrid.swift */; };
 		0A1B5CF21E4D694F0010FE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B5CF11E4D694F0010FE9C /* Assets.xcassets */; };
 		0A1B5CFC1E4D6B1B0010FE9C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B5CFB1E4D6B1B0010FE9C /* main.swift */; };
 		0A5A5DC02150372E0025F138 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A5DBF2150372E0025F138 /* Window.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0695B12150489F008D4A35 /* NumericGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericGrid.swift; sourceTree = "<group>"; };
 		0A1B5CE41E4D694F0010FE9C /* swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1B5CF11E4D694F0010FE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "swiftris-mac/Assets.xcassets"; sourceTree = "<group>"; };
 		0A1B5CFB1E4D6B1B0010FE9C /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../main.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		0A5A5DC1215037FB0025F138 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				0A0695B12150489F008D4A35 /* NumericGrid.swift */,
 				0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */,
 			);
 			path = Basic;
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A95A19B1E5CB70500E97974 /* AppDelegate.swift in Sources */,
+				0A0695B22150489F008D4A35 /* NumericGrid.swift in Sources */,
 				0A95A1951E5B42B000E97974 /* SKViewController.swift in Sources */,
 				0AE8C1D01E5D3235009F5761 /* Piece.swift in Sources */,
 				0AE8C1CC1E5D3130009F5761 /* GameScene.swift in Sources */,
