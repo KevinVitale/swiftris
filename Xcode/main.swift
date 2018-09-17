@@ -18,11 +18,6 @@ window.styleMask.remove(.resizable)
 //------------------------------------------------------------------------------
 let appDelegate = AppDelegate(with: .shared)
 
-// activate `NSApp`
-//------------------------------------------------------------------------------
-NSApp.setActivationPolicy(.regular)
-NSApp.activate(ignoringOtherApps: true)
-
 // run
 //------------------------------------------------------------------------------
 NSApp.run()
