@@ -159,6 +159,7 @@
 					0A1B5CE31E4D694F0010FE9C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = J3L2NJGMGJ;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -168,6 +169,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -318,6 +320,7 @@
 				PRODUCT_NAME = swiftris;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -365,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.swiftris-mac";
 				PRODUCT_NAME = swiftris;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
