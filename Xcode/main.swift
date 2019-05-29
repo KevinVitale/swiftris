@@ -1,17 +1,19 @@
 import Foundation
 import AppKit
+import SpriteKit
 
 // Create 'window'
 //------------------------------------------------------------------------------
-let window = Window {
-    let controller = SKViewController()
-    let scene = GameScene(size: CGSize(width: 480, height: 640))
-    controller.skView.presentScene(scene)
-    controller.skView.frame = NSRect(origin: .zero, size: scene.size)
+let gameWindow = Window(styleMask: [.titled, .miniaturizable]) { SKViewController() }
+let gameScene  = GameScene(size: CGSize(width: 480, height: 640))
 
-    return controller
-}
-window.styleMask.remove(.resizable)
+gameWindow.viewController?.skView.presentScene(gameScene)
+gameWindow.viewController?.skView.frame = CGRect(
+    origin: .zero
+    , size: gameScene.size
+)
+gameWindow.setContentSize(gameScene.size)
+gameWindow.center()
 
 // Create 'delegate'
 //------------------------------------------------------------------------------

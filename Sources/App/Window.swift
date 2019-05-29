@@ -20,10 +20,10 @@ class Window<ViewController: NSViewController>: NSWindow
 
 extension Window
 {
-    convenience init(_ viewController: () -> ViewController) {
+    convenience init(styleMask: NSWindow.StyleMask, _ viewController: () -> ViewController) {
         self.init(contentViewController: viewController())
+        self.styleMask.formIntersection(styleMask)
         self.makeKeyAndOrderFront(nil)
-        self.center()
     }
 }
 
