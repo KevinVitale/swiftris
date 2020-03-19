@@ -15,7 +15,7 @@ extension SKView {
         static let drawCount  = DebugFlag(rawValue: 1 << 4)
         static let nodeCount  = DebugFlag(rawValue: 1 << 5)
     }
-
+    
     /// Toggle arbitruary debug flags.
     ///
     /// - Parameters:

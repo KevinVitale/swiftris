@@ -7,36 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0695B22150489F008D4A35 /* NumericGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0695B12150489F008D4A35 /* NumericGrid.swift */; };
+		0A0695B22150489F008D4A35 /* ScoreboardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0695B12150489F008D4A35 /* ScoreboardNode.swift */; };
 		0A1B5CF21E4D694F0010FE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B5CF11E4D694F0010FE9C /* Assets.xcassets */; };
-		0A1B5CFC1E4D6B1B0010FE9C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B5CFB1E4D6B1B0010FE9C /* main.swift */; };
-		0A5A5DC02150372E0025F138 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A5DBF2150372E0025F138 /* Window.swift */; };
-		0A95A1951E5B42B000E97974 /* SKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95A1931E5B422D00E97974 /* SKViewController.swift */; };
-		0A95A1961E5B42EF00E97974 /* SKViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */; };
-		0A95A1981E5B770C00E97974 /* SKTileMapNodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95A1971E5B770C00E97974 /* SKTileMapNodeExtensions.swift */; };
-		0A95A19A1E5B793F00E97974 /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95A1991E5B793F00E97974 /* GameScore.swift */; };
+		0A3A979224240BDD00C6853A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3A979024240BDD00C6853A /* MainMenu.xib */; };
+		0A5A5DC02150372E0025F138 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A5DBF2150372E0025F138 /* Grid.swift */; };
+		0A61F8C3242512F600F71C90 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61F8C2242512F600F71C90 /* GameState.swift */; };
+		0A95A1951E5B42B000E97974 /* SKView+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95A1931E5B422D00E97974 /* SKView+Debug.swift */; };
+		0A95A1981E5B770C00E97974 /* TileGridDrawComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95A1971E5B770C00E97974 /* TileGridDrawComponent.swift */; };
 		0A95A19B1E5CB70500E97974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B5CFF1E4D6EC50010FE9C /* AppDelegate.swift */; };
-		0AE8C1CA1E5D3082009F5761 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8C1C91E5D3082009F5761 /* Game.swift */; };
+		0AA7416124240B38006A7413 /* blip.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0AA7416024240B38006A7413 /* blip.caf */; };
+		0AE8C1CA1E5D3082009F5761 /* TileColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8C1C91E5D3082009F5761 /* TileColor.swift */; };
 		0AE8C1CC1E5D3130009F5761 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8C1CB1E5D3130009F5761 /* GameScene.swift */; };
-		0AE8C1CE1E5D31F8009F5761 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8C1CD1E5D31F8009F5761 /* Player.swift */; };
-		0AE8C1D01E5D3235009F5761 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8C1CF1E5D3235009F5761 /* Piece.swift */; };
+		0AE8C1CE1E5D31F8009F5761 /* TileGridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8C1CD1E5D31F8009F5761 /* TileGridNode.swift */; };
+		0AE8C1D01E5D3235009F5761 /* TileGridEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8C1CF1E5D3235009F5761 /* TileGridEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A0695B12150489F008D4A35 /* NumericGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericGrid.swift; sourceTree = "<group>"; };
+		0A0695B12150489F008D4A35 /* ScoreboardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardNode.swift; sourceTree = "<group>"; };
 		0A1B5CE41E4D694F0010FE9C /* swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1B5CF11E4D694F0010FE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "swiftris-mac/Assets.xcassets"; sourceTree = "<group>"; };
-		0A1B5CFB1E4D6B1B0010FE9C /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../main.swift; sourceTree = "<group>"; };
 		0A1B5CFF1E4D6EC50010FE9C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A5A5DBF2150372E0025F138 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
-		0A95A1931E5B422D00E97974 /* SKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewController.swift; sourceTree = "<group>"; };
-		0A95A1971E5B770C00E97974 /* SKTileMapNodeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTileMapNodeExtensions.swift; sourceTree = "<group>"; };
-		0A95A1991E5B793F00E97974 /* GameScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
-		0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewExtensions.swift; sourceTree = "<group>"; };
-		0AE8C1C91E5D3082009F5761 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0A3A979124240BDD00C6853A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "swiftris-mac/Base.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		0A5A5DBF2150372E0025F138 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		0A61F8C2242512F600F71C90 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		0A95A1931E5B422D00E97974 /* SKView+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKView+Debug.swift"; sourceTree = "<group>"; };
+		0A95A1971E5B770C00E97974 /* TileGridDrawComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileGridDrawComponent.swift; sourceTree = "<group>"; };
+		0AA7416024240B38006A7413 /* blip.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = blip.caf; path = "swiftris-mac/blip.caf"; sourceTree = "<group>"; };
+		0AE8C1C91E5D3082009F5761 /* TileColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileColor.swift; sourceTree = "<group>"; };
 		0AE8C1CB1E5D3130009F5761 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		0AE8C1CD1E5D31F8009F5761 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		0AE8C1CF1E5D3235009F5761 /* Piece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
+		0AE8C1CD1E5D31F8009F5761 /* TileGridNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileGridNode.swift; sourceTree = "<group>"; };
+		0AE8C1CF1E5D3235009F5761 /* TileGridEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileGridEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,26 +50,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A0695B3215062BD008D4A35 /* SpriteKit */ = {
-			isa = PBXGroup;
-			children = (
-				0A95A1931E5B422D00E97974 /* SKViewController.swift */,
-				0AA860E81E4E554A00EA0E7C /* SKViewExtensions.swift */,
-				0A95A1971E5B770C00E97974 /* SKTileMapNodeExtensions.swift */,
-			);
-			path = SpriteKit;
-			sourceTree = "<group>";
-		};
 		0A1B5CD91E4D692D0010FE9C = {
 			isa = PBXGroup;
 			children = (
 				0A5A5DBD2150371D0025F138 /* Sources */,
-				0AE8C1CB1E5D3130009F5761 /* GameScene.swift */,
-				0AE8C1C91E5D3082009F5761 /* Game.swift */,
-				0AE8C1CF1E5D3235009F5761 /* Piece.swift */,
-				0AE8C1CD1E5D31F8009F5761 /* Player.swift */,
-				0A95A1991E5B793F00E97974 /* GameScore.swift */,
-				0A1B5CE61E4D694F0010FE9C /* swiftris-mac */,
 				0A1B5D1D1E4DE5740010FE9C /* Resources */,
 				0A1B5CE51E4D694F0010FE9C /* Products */,
 			);
@@ -83,17 +67,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A1B5CE61E4D694F0010FE9C /* swiftris-mac */ = {
-			isa = PBXGroup;
-			children = (
-				0A1B5CFB1E4D6B1B0010FE9C /* main.swift */,
-			);
-			path = "swiftris-mac";
-			sourceTree = "<group>";
-		};
 		0A1B5D1D1E4DE5740010FE9C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A3A979024240BDD00C6853A /* MainMenu.xib */,
+				0AA7416024240B38006A7413 /* blip.caf */,
 				0A1B5CF11E4D694F0010FE9C /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -102,29 +80,19 @@
 		0A5A5DBD2150371D0025F138 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0A5A5DC1215037FB0025F138 /* Basic */,
-				0A5A5DBE215037220025F138 /* App */,
-				0A0695B3215062BD008D4A35 /* SpriteKit */,
+				0A1B5CFF1E4D6EC50010FE9C /* AppDelegate.swift */,
+				0AE8C1CB1E5D3130009F5761 /* GameScene.swift */,
+				0A61F8C2242512F600F71C90 /* GameState.swift */,
+				0A5A5DBF2150372E0025F138 /* Grid.swift */,
+				0A0695B12150489F008D4A35 /* ScoreboardNode.swift */,
+				0A95A1931E5B422D00E97974 /* SKView+Debug.swift */,
+				0AE8C1C91E5D3082009F5761 /* TileColor.swift */,
+				0A95A1971E5B770C00E97974 /* TileGridDrawComponent.swift */,
+				0AE8C1CF1E5D3235009F5761 /* TileGridEntity.swift */,
+				0AE8C1CD1E5D31F8009F5761 /* TileGridNode.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
-			sourceTree = "<group>";
-		};
-		0A5A5DBE215037220025F138 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				0A1B5CFF1E4D6EC50010FE9C /* AppDelegate.swift */,
-				0A5A5DBF2150372E0025F138 /* Window.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		0A5A5DC1215037FB0025F138 /* Basic */ = {
-			isa = PBXGroup;
-			children = (
-				0A0695B12150489F008D4A35 /* NumericGrid.swift */,
-			);
-			path = Basic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +122,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					0A1B5CE31E4D694F0010FE9C = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -166,10 +134,9 @@
 			};
 			buildConfigurationList = 0A1B5CDD1E4D692D0010FE9C /* Build configuration list for PBXProject "swiftris" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -189,6 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1B5CF21E4D694F0010FE9C /* Assets.xcassets in Resources */,
+				0AA7416124240B38006A7413 /* blip.caf in Resources */,
+				0A3A979224240BDD00C6853A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,32 +169,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A95A19B1E5CB70500E97974 /* AppDelegate.swift in Sources */,
-				0A0695B22150489F008D4A35 /* NumericGrid.swift in Sources */,
-				0A95A1951E5B42B000E97974 /* SKViewController.swift in Sources */,
-				0AE8C1D01E5D3235009F5761 /* Piece.swift in Sources */,
+				0A0695B22150489F008D4A35 /* ScoreboardNode.swift in Sources */,
+				0A95A1951E5B42B000E97974 /* SKView+Debug.swift in Sources */,
+				0AE8C1D01E5D3235009F5761 /* TileGridEntity.swift in Sources */,
 				0AE8C1CC1E5D3130009F5761 /* GameScene.swift in Sources */,
-				0AE8C1CA1E5D3082009F5761 /* Game.swift in Sources */,
-				0A95A19A1E5B793F00E97974 /* GameScore.swift in Sources */,
-				0A1B5CFC1E4D6B1B0010FE9C /* main.swift in Sources */,
-				0A95A1981E5B770C00E97974 /* SKTileMapNodeExtensions.swift in Sources */,
-				0AE8C1CE1E5D31F8009F5761 /* Player.swift in Sources */,
-				0A95A1961E5B42EF00E97974 /* SKViewExtensions.swift in Sources */,
-				0A5A5DC02150372E0025F138 /* Window.swift in Sources */,
+				0AE8C1CA1E5D3082009F5761 /* TileColor.swift in Sources */,
+				0A95A1981E5B770C00E97974 /* TileGridDrawComponent.swift in Sources */,
+				0A61F8C3242512F600F71C90 /* GameState.swift in Sources */,
+				0AE8C1CE1E5D31F8009F5761 /* TileGridNode.swift in Sources */,
+				0A5A5DC02150372E0025F138 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		0A3A979024240BDD00C6853A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A3A979124240BDD00C6853A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		0A1B5CDE1E4D692D0010FE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -247,12 +234,21 @@
 		0A1B5CDF1E4D692D0010FE9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -315,7 +311,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "swiftris-mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.swiftris-mac";
@@ -368,7 +364,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "swiftris-mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinvitale.swiftris-mac";
 				PRODUCT_NAME = swiftris;
